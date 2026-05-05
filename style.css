@@ -983,6 +983,7 @@ label {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    width: 359px;
   }
 
   .hero h1 {
@@ -1002,9 +1003,10 @@ label {
   }
 
   .card {
-    width: 317px !important;
+    width: 320px !important;
   }
 
+ 
   .card1 {
     width: 317px !important;
   }
