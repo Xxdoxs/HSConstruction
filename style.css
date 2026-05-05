@@ -985,6 +985,7 @@ label {
     padding-right: 20px;
     width: 359px;
   }
+  
 
   .hero h1 {
     font-size: clamp(45px, 8vw, 48px) !important;
