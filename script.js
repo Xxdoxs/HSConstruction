@@ -206,3 +206,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Roadmap Tabs Logic
+window.switchRoadmapTab = function(tabIndex) {
+  const tabs = document.querySelectorAll('.roadmap-tab');
+  const contents = document.querySelectorAll('.roadmap-content');
+  
+  tabs.forEach((tab, index) => {
+    if (index + 1 === tabIndex) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
+  
+  contents.forEach((content, index) => {
+    if (index + 1 === tabIndex) {
+      content.classList.add('active');
+    } else {
+      content.classList.remove('active');
+    }
+  });
+};

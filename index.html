@@ -1188,50 +1188,223 @@
   <!-- SECTION 7: HOW WE WORK -->
   <section class="section-py bg-alt">
     <div class="container fade-up">
-      <div style="text-align: center; margin-bottom: 64px;">
-        <div class="section-tag">Our process</div>
-        <h2 style="font-size: 36px; margin-bottom: 16px;">Your journey with HS</h2>
-        <p class="text-body">A transparent simple 5-step process from first call to keys in your hand.</p>
+      <div style="text-align: center; margin-bottom: 48px;">
+        <div class="roadmap-heading-accent">
+          <span class="material-symbols-outlined" style="transform: scaleX(-1);">handshake</span>
+          Working Steps
+          <span class="material-symbols-outlined">handshake</span>
+        </div>
+        <h2 style="font-size: 36px; margin-top: 16px;">Your Roadmap to Building the Home of Your Dreams</h2>
+        <div class="roadmap-dash-line"></div>
       </div>
 
-      <div class="process-container">
-        <!-- Step 1 -->
-        <div class="process-step">
-          <div class="process-number">01</div>
-          <span class="material-symbols-outlined text-primary" style="font-size: 24px; margin-bottom: 12px;">chat</span>
-          <h4 style="font-size: 16px; margin-bottom: 8px;">Free consultation</h4>
-          <p class="text-body" style="font-size: 12px;">Site visit and full requirement discussion</p>
+      <div class="roadmap-container">
+        <div class="roadmap-tabs">
+          <!-- Tab 1 -->
+          <div class="roadmap-tab active" onclick="switchRoadmapTab(1)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">01</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">groups</span>
+            </div>
+            <div class="roadmap-tab-title">Lets Get<br>Started</div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="roadmap-tab" onclick="switchRoadmapTab(2)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">02</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">architecture</span>
+            </div>
+            <div class="roadmap-tab-title">Design<br>Specification</div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="roadmap-tab" onclick="switchRoadmapTab(3)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">03</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">history_edu</span>
+            </div>
+            <div class="roadmap-tab-title">Client<br>Agreement</div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="roadmap-tab" onclick="switchRoadmapTab(4)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">04</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">construction</span>
+            </div>
+            <div class="roadmap-tab-title">Construction<br>& Updates</div>
+          </div>
+          <!-- Tab 5 -->
+          <div class="roadmap-tab" onclick="switchRoadmapTab(5)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">05</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">location_on</span>
+            </div>
+            <div class="roadmap-tab-title">Site<br>Visits</div>
+          </div>
+          <!-- Tab 6 -->
+          <div class="roadmap-tab" onclick="switchRoadmapTab(6)">
+            <div class="roadmap-icon-wrapper">
+              <span class="roadmap-step-number">06</span>
+              <span class="material-symbols-outlined" style="font-size: 32px;">key</span>
+            </div>
+            <div class="roadmap-tab-title">Completion<br>& Handover</div>
+          </div>
         </div>
-        <!-- Step 2 -->
-        <div class="process-step">
-          <div class="process-number">02</div>
-          <span class="material-symbols-outlined text-primary"
-            style="font-size: 24px; margin-bottom: 12px;">architecture</span>
-          <h4 style="font-size: 16px; margin-bottom: 8px;">Design and planning</h4>
-          <p class="text-body" style="font-size: 12px;">2D 3D floor plans created</p>
+
+        <!-- Tab Contents -->
+        <!-- Content 1 -->
+        <div class="roadmap-content active" id="roadmap-content-1">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Lets Get Started">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Lets Get Started</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                Enquire and schedule an appointment with our experts to discuss your requirements. Through calls and meetings, our technical sales executives will ensure that no detail is overlooked as we kick off your project with an estimated quote.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">home</span>
+                  Understanding the construction requirements of the client.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">home</span>
+                  Defining Client Construction Criteria.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
         </div>
-        <!-- Step 3 -->
-        <div class="process-step">
-          <div class="process-number">03</div>
-          <span class="material-symbols-outlined text-primary"
-            style="font-size: 24px; margin-bottom: 12px;">gavel</span>
-          <h4 style="font-size: 16px; margin-bottom: 8px;">BBMP approval</h4>
-          <p class="text-body" style="font-size: 12px;">Plan approval assistance</p>
+
+        <!-- Content 2 -->
+        <div class="roadmap-content" id="roadmap-content-2">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Design Specification">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Design Specification</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                Our architects will develop a comprehensive design specification. We provide detailed 2D layouts and 3D elevations so you can visualize your dream home before construction begins.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">draw</span>
+                  Drafting accurate 2D floor plans.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">view_in_ar</span>
+                  Creating immersive 3D elevation models.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
         </div>
-        <!-- Step 4 -->
-        <div class="process-step">
-          <div class="process-number">04</div>
-          <span class="material-symbols-outlined text-primary"
-            style="font-size: 24px; margin-bottom: 12px;">construction</span>
-          <h4 style="font-size: 16px; margin-bottom: 8px;">Construction begins</h4>
-          <p class="text-body" style="font-size: 12px;">Quality build with photo updates</p>
+
+        <!-- Content 3 -->
+        <div class="roadmap-content" id="roadmap-content-3">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1556156653-e5a7c69cc263?w=800&q=80" alt="Client Agreement">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Client Agreement</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                Once the design is finalized, we draft a transparent agreement detailing the scope of work, timeline, and exact cost. What we quote is what you pay—no hidden fees.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">description</span>
+                  Detailed cost breakdown and payment schedule.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">verified</span>
+                  Finalizing the construction contract.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
         </div>
-        <!-- Step 5 -->
-        <div class="process-step">
-          <div class="process-number">05</div>
-          <span class="material-symbols-outlined text-primary" style="font-size: 24px; margin-bottom: 12px;">key</span>
-          <h4 style="font-size: 16px; margin-bottom: 8px;">Home handover</h4>
-          <p class="text-body" style="font-size: 12px;">Final inspection keys given</p>
+
+        <!-- Content 4 -->
+        <div class="roadmap-content" id="roadmap-content-4">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356fce?w=800&q=80" alt="Construction & Updates">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Construction & Updates</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                Our expert team begins the build using premium ISI marked materials. You will receive regular progress updates and photos, ensuring full transparency throughout the construction phase.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">foundation</span>
+                  Quality-controlled civil construction.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">add_a_photo</span>
+                  Regular milestone tracking and reporting.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content 5 -->
+        <div class="roadmap-content" id="roadmap-content-5">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?w=800&q=80" alt="Site Visits">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Site Visits</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                We encourage periodic site visits. Our project managers will walk you through the ongoing work, allowing you to inspect the quality and progress firsthand.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">tour</span>
+                  Guided tours with project managers.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">question_answer</span>
+                  Addressing on-site queries and feedback.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content 6 -->
+        <div class="roadmap-content" id="roadmap-content-6">
+          <div class="roadmap-content-inner">
+            <div class="roadmap-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Completion & Handover">
+            </div>
+            <div class="roadmap-text-content">
+              <h3 style="font-size: 32px; color: var(--primary-blue); margin-bottom: 16px; font-weight: 800;">Completion & Handover</h3>
+              <p class="text-body" style="font-size: 14px; margin-bottom: 24px; line-height: 1.6;">
+                After rigorous quality checks, we hand over the keys to your new home. We ensure everything is polished, functional, and perfectly matched to your expectations.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 32px; font-size: 14px; color: var(--text-dark);">
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">fact_check</span>
+                  Final walk-through and quality inspection.
+                </li>
+                <li style="display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start;">
+                  <span class="material-symbols-outlined" style="font-size: 20px; color: var(--text-muted);">vpn_key</span>
+                  Official handover of keys and documentation.
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="background-color: #63b3c0; border: none; padding: 12px 32px;">Know More</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

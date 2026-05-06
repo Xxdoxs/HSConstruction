@@ -833,6 +833,160 @@ label {
   top: -40px;
 }
 
+/* ==========================================
+   ROADMAP TABS
+   ========================================== */
+.roadmap-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roadmap-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  gap: 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.roadmap-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.roadmap-tab {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 16px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.roadmap-tab.active {
+  opacity: 1;
+}
+
+.roadmap-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--outline-ghost);
+  transition: all 0.3s ease;
+}
+
+.roadmap-tab.active::after {
+  background-color: var(--primary-blue);
+  height: 3px;
+}
+
+.roadmap-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px dashed var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  color: var(--primary-blue);
+}
+
+.roadmap-tab.active .roadmap-icon-wrapper {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  border-style: solid;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 63, 177, 0.2);
+}
+
+.roadmap-step-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 28px;
+  font-weight: 700;
+  -webkit-text-stroke: 1.5px var(--primary-blue);
+  color: transparent;
+  background: transparent;
+  line-height: 1;
+  z-index: 2;
+}
+
+.roadmap-tab-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.roadmap-content {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.roadmap-content.active {
+  display: block;
+}
+
+.roadmap-content-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  background: white;
+  /* Remove border radius and shadow to match screenshot style */
+  /* border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--outline-ghost); */
+}
+
+.roadmap-img-wrapper {
+  height: 400px;
+}
+
+.roadmap-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roadmap-text-content {
+  padding: 16px 0;
+  text-align: left;
+}
+
+.roadmap-heading-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #63b3c0; /* matches screenshot teal color */
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.roadmap-dash-line {
+  height: 2px;
+  background-image: linear-gradient(to right, var(--primary-blue) 50%, transparent 50%);
+  background-size: 8px 100%;
+  width: 100%;
+  max-width: 600px;
+  margin: 8px auto 48px;
+}
+
 /* Responsive Rules */
 /* Bento Grid */
 .bento-grid {
@@ -985,7 +1139,7 @@ label {
     padding-right: 20px;
     width: 359px;
   }
-  
+
 
   .hero h1 {
     font-size: clamp(45px, 8vw, 48px) !important;
@@ -1054,12 +1208,32 @@ label {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
+  /* Roadmap Tabs Mobile */
+  .roadmap-content-inner {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .roadmap-img-wrapper {
+    height: 250px !important;
+  }
+  
+  .roadmap-text-content {
+    padding: 24px !important;
+  }
+  
+  .roadmap-tabs {
+    justify-content: flex-start !important;
+    padding-bottom: 24px !important;
+  }
 }
 
 @media (min-width: 769px) {
   .stats-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
 
   .process-container {
     display: flex;
