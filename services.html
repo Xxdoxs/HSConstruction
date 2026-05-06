@@ -235,81 +235,791 @@
   </section>
 
   <!-- 4. TRANSPARENT PACKAGES -->
-  <section class="section-py bg-alt">
+  <section id="pricing" class="section-py bg-alt">
     <div class="container fade-up">
-      <div style="text-align: center; margin-bottom: 64px;">
-        <h2 style="font-size: 48px; margin-bottom: 16px;">Transparent <span class="blue-gradient-text">packages</span>
-        </h2>
-        <p class="text-body" style="max-width: 600px; margin: 0 auto;">Choose a blueprint for your success. Our tiers
-          offer flexibility without compromising structural integrity.</p>
+      <div style="text-align:center;margin-bottom:48px;">
+        <div class="section-tag">Transparent pricing</div>
+        <h2 style="font-size:36px;margin-bottom:16px;">Choose your package</h2>
+        <p class="text-body">All-inclusive. No hidden costs. Compare what's included in each plan.</p>
       </div>
 
-      <div class="grid grid-cols-3" style="align-items: center;">
-        <!-- Essential -->
-        <div class="pricing-card" style="padding: 48px 32px;">
-          <div style="margin-bottom: 32px;">
-            <div style="font-size: 12px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;">Essential build</div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px;">
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Grade A Bricks & Cement</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> 2D Architectural Plan</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Standard Electrical/Plumbing</div>
-            <div class="pricing-feature" style="opacity: 0.3;"><span class="material-symbols-outlined"
-                style="font-size: 18px;">cancel</span> Premium Italian Marble</div>
-            <div class="pricing-feature" style="opacity: 0.3;"><span class="material-symbols-outlined"
-                style="font-size: 18px;">cancel</span> Smart Home Integration</div>
-          </div>
-          <button class="btn btn-ghost" style="width: 100%; border-radius: 12px;">SELECT STANDARD</button>
+      <!-- Package Header -->
+      <div class="pkg-header-row">
+        <div class="pkg-col pkg-col-basic">
+          <div class="pkg-tier-badge">Basic</div>
+          <div class="pkg-price">₹1,650<span>/sqft</span></div>
+          <div class="pkg-desc">Budget-friendly quality</div>
         </div>
-
-        <!-- Signature -->
-        <div class="pricing-card signature" style="padding: 64px 32px; border-radius: 32px; position: relative;">
-          <div
-            style="position: absolute; top: 16px; right: 16px; background: #22c55e; color: white; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 800; letter-spacing: 0.1em;">
-            Most popular</div>
-          <div style="margin-bottom: 32px;">
-            <div style="font-size: 12px; font-weight: 800; opacity: 0.8; margin-bottom: 8px;">Signature series</div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px;">
-            <div class="pricing-feature"><span class="material-symbols-outlined"
-                style="font-size: 18px; color: white;">check_circle</span> Premium Vitrified Tiles</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined"
-                style="font-size: 18px; color: white;">check_circle</span> 3D Visualization & VR Walkthrough</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined"
-                style="font-size: 18px; color: white;">check_circle</span> High-End CP Fittings (Jaquar/Cera)</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined"
-                style="font-size: 18px; color: white;">check_circle</span> Modular Kitchen (Select Designs)</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined"
-                style="font-size: 18px; color: white;">check_circle</span> Integrated Automation</div>
-          </div>
-          <button class="btn btn-white" style="width: 100%; border-radius: 12px; color: var(--primary-blue);">GET
-            PREMIUM NOW</button>
+        <div class="pkg-col pkg-col-premium">
+          <div class="pkg-popular-badge">Most Popular</div>
+          <div class="pkg-tier-badge">Premium</div>
+          <div class="pkg-price">₹1,890<span>/sqft</span></div>
+          <div class="pkg-desc">Best for quality homes</div>
         </div>
+        <div class="pkg-col pkg-col-luxury">
+          <div class="pkg-tier-badge">Luxury</div>
+          <div class="pkg-price">₹2,370<span>/sqft</span></div>
+          <div class="pkg-desc">Uncompromising premium</div>
+        </div>
+      </div>
 
-        <!-- Elite -->
-        <div class="pricing-card" style="padding: 48px 32px;">
-          <div style="margin-bottom: 32px;">
-            <div style="font-size: 12px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;">Elite craft
+      <!-- Accordion Rows -->
+      <div class="pkg-accordion" id="pkgAccordion">
+
+        <!-- Row 1 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Design and drawings</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>2D floor plans</li>
+                <li>3D elevation designs</li>
+                <li>Max 3 drawing revisions</li>
+
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>2D floor plans</li>
+                <li>3D elevation designs</li>
+                <li>Max 3 revisions per drawing</li>
+                <li>Basic internal isometric views</li>
+                <li>Visual site survey</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Premium 2D &amp; 3D floor plans</li>
+                <li>3D elevation all views</li>
+                <li>Max 40 revisions</li>
+                <li>Full isometric views + renders</li>
+                <li>Landscaping design</li>
+                <li>3D walkthrough</li>
+                <li>Physical site survey</li>
+                <li>VR walkthrough</li>
+              </ul>
             </div>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px;">
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Italian Marble Flooring</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Fully Customizable Blueprint</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Whole-Home Automation</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Designer Landscaping</div>
-            <div class="pricing-feature"><span class="material-symbols-outlined text-primary"
-                style="font-size: 18px;">check_circle</span> Personal Project Manager</div>
-          </div>
-          <button class="btn btn-ghost" style="width: 100%; border-radius: 12px;">SELECT LUXURY</button>
         </div>
-      </div>
+
+        <!-- Row 2 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Civil construction</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Floor to floor height – 9′</li>
+                <li>Steel (500 TMT Bars) – Bhuwalka/Kamadhenu</li>
+                <li>Cement (Grade 43 or 53 as needed) – Penna/Dalmia</li>
+                <li>UG Sump built with solid blocks of 6” thickness & waterproof plastered 6000 lts</li>
+                <li>Concrete – M20 grade RMC</li>
+                <li>Solid Block walls – 6” & 4” thickness</li>
+                <li>Internal, external and toilet wall – column joints plastering with chicken mesh</li>
+                <li>Waterproofing compound – Dr.Fixit/FOSROC for external walls</li>
+                <li>Cement based waterproofing</li>
+                <li>Steel/concrete lofts – Not included</li>
+                <li>Anti termite treatment</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Floor to floor height – 10'</li>
+                <li>Steel (500 TMT bars) – Bhuwalka/Kamadhenu</li>
+                <li>Cement (Grade 43 or 53 as needed) – Penna/Dalmia</li>
+                <li>UG Sump built with solid blocks of 8” thickness & waterproof plastered 7000 lts</li>
+                <li>Concrete – M20 grade RMC</li>
+                <li>Solid Block walls – 6” & 4” thickness</li>
+                <li>Internal, external and toilet wall – column joints plastering with chicken mesh</li>
+                <li>Waterproofing compound – Dr.Fixit/FOSROC for external walls</li>
+                <li>Cement based waterproofing, waterproofing in terrace to avoid leakage</li>
+                <li>Steel/concrete lofts – Not Included</li>
+                <li>Ledge wall for incorporating concealed sanitary parts – Included</li>
+                <li>Anti termite treatment</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Floor to floor height – 10’6″</li>
+                <li>Steel (500 TMT bars) – JSW/SAIL/Vizag</li>
+                <li>Cement (Grade 53) – ACC/Ultratech</li>
+                <li>UG Sump built with RCC & waterproof plastered 8000 lts</li>
+                <li>Concrete – M25 grade RMC</li>
+                <li>Machine cut solid Block walls – 6” & 4” thickness of APCO/Sonika/equivalent</li>
+                <li>Internal courtyards, skylights & other designer architectural elements included</li>
+                <li>Internal, external and toilet wall – column joints plastering with chicken mesh</li>
+                <li>Waterproofing compound – Dr.Fixit/FOSROC for external walls</li>
+                <li>Crystalline waterproofing, cinder filling in sunken toilets, heat & waterproofing in terrace</li>
+                <li>Ledge wall for incorporating concealed sanitary parts – Included</li>
+                <li>Steel/concrete lofts – Not Included</li>
+                <li>Anti termite treatment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Architectural design</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Working drawing for all works</li>
+                <li>Schedule of Openings</li>
+                <li>Section and Elevation</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Working drawing for all works</li>
+                <li>Schedule of Openings</li>
+                <li>Section and Elevation</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Working drawing for all works</li>
+                <li>Schedule of Openings</li>
+                <li>Section and Elevation</li>
+                <li>Detailed portfolio of the home post handover</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Interior design</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>2D Furniture layout</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Complete 3D design interiors (only if executed by BuildAHome)</li>
+                <li>2D Furniture layout</li>
+                <li>Assisting in interior procurement</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Complete 3D design interiors (only if executed by BuildAHome)</li>
+                <li>2D Furniture layout</li>
+                <li>Assisting in interior procurement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Structural designing</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Structural Design as per IS Code</li>
+                <li>Good for construction drawings</li>
+                <li>Soil Test report</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Structural Design as per IS Code</li>
+                <li>Good for construction drawings</li>
+                <li>Soil Test report</li>
+                <li>Design Analysis Report</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Structural Design as per IS Code</li>
+                <li>Good for construction drawings</li>
+                <li>Soil Test Report</li>
+                <li>Overlapped Structural, Architectural & MEP Drawings</li>
+                <li>3D structural drawings & Design Analysis Report</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>MEP designing</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Electrical Layout</li>
+                <li>Plumbing Water Line Layout</li>
+                <li>Plumbing Drainage Line Layout</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Electrical Layout</li>
+                <li>Plumbing Water Line Layout</li>
+                <li>Plumbing Drainage Line Layout</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Electrical Layout</li>
+                <li>Plumbing Water Line Layout</li>
+                <li>Plumbing Drainage Line Layout</li>
+                <li>Detailed HVAC design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Government liaison assistance</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <p><strong>HS Construction will provide liaison assistance with different government agencies, obtain
+                  permissions, licenses & sanction fee for the following (if applicable):</strong></p>
+
+              <ul>
+                <li>Construction Plan Sanction</li>
+                <li>Temporary Electricity connection</li>
+                <li>Permanent electrical connection</li>
+                <li>Water connection</li>
+                <li>Sewage connection</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <p><strong>HS Construction will provide liaison assistance with different government agencies, obtain
+                  permissions, licenses & sanction fee for the following (if applicable):</strong></p>
+
+              <ul>
+                <li>Construction Plan Sanction</li>
+                <li>Temporary Electricity connection</li>
+                <li>Permanent electrical connection</li>
+                <li>Water connection</li>
+                <li>Sewage connection</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <p><strong>HS Construction will provide liaison assistance with different government agencies, obtain
+                  permissions, licenses & sanction fee for the following (if applicable):</strong></p>
+
+              <ul>
+                <li>Construction Plan Sanction</li>
+                <li>Temporary Electricity connection</li>
+                <li>Permanent electrical connection</li>
+                <li>Water connection</li>
+                <li>Sewage connection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Flooring &amp; wall tiling</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Living, Kitchen, Dining & Bedrooms: Vitrified tiles – Rs.50/- per Sqft</li>
+                <li>Balcony, Sit-out, Passage Areas: Anti-skid tiles – Rs.35/- per Sqft</li>
+                <li>Toilet Flooring: Anti-skid tiles – Rs.40/- per Sqft</li>
+                <li>Toilet Wall Dado (7ft height): Highlighting tiles – Rs.50/- per Sqft</li>
+                <li>Kitchen counter top: Granite – Rs.110/- per Sqft</li>
+                <li>Kitchen Wall Dado (up to 2’ above counter): Backsplash tiles – Rs.45/- per Sqft</li>
+                <li>2’ x 2’ is maximum tile size</li>
+                <li>No setback tiles</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Kitchen, Dining & Bedrooms: Vitrified tiles – Rs.60/- per Sqft (max size 2’ x 2’)</li>
+                <li>Living Room, Foyer: Marble finished vitrified tiles – Rs.70/- per Sqft (max size 2’ x 4’)</li>
+                <li>Staircase: Granite – Rs.100/- per Sqft</li>
+                <li>Balcony, Sit-out, Passage & common areas: Anti-skid tiles – Rs.55/- per Sqft</li>
+                <li>Toilet floor: Anti-skid tiles – Rs.50/- per Sqft</li>
+                <li>Toilet Wall Dado (up to 7ft height): Light & highlighting tiles – Rs.45/- per Sqft</li>
+                <li>Parking area, setback area (if charged): Tiles – Rs.35/- per Sqft</li>
+                <li>Kitchen counter top: Granite – Rs.120/- per Sqft</li>
+                <li>Kitchen Wall Dado (up to 2’ above counter): Backsplash tiles – Rs.50/- per Sqft</li>
+                <li>Puja room wall tiling: Not included</li>
+                <li>Puja room granite slab: Rs.100/- per Sqft</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Kitchen & Bedrooms: Vitrified tiles – Rs.80/- per Sqft</li>
+                <li>Main Living Room, Dining: Italian marble / premium vitrified tiles (4’ x 8’) – Rs.400/- per Sqft
+                </li>
+                <li>Staircase, foyer area: Granite – Rs.135/- per Sqft</li>
+                <li>Balcony, sit-out, passage & common areas: Anti-skid tiles – Rs.65/- per Sqft</li>
+                <li>Toilet floor: Anti-skid tiles – Rs.70/- per Sqft</li>
+                <li>Toilet Wall Dado (full height): Light & highlighting tiles – Rs.65/- per Sqft</li>
+                <li>Parking area: Parking tiles / designer pavers – Rs.55/- per Sqft</li>
+                <li>Kitchen counter top: Granite – Rs.150/- per Sqft</li>
+                <li>Kitchen Wall Dado (up to 2’ above counter): Backsplash tiles – Rs.60/- per Sqft</li>
+                <li>Puja room wall tiling (full height): Rs.65/- per Sqft</li>
+                <li>Puja room granite slab: Rs.100/- per Sqft</li>
+                <li>No limitation on tile size</li>
+                <li>Tile grouting with spacer joints & epoxy grout in bathrooms</li>
+                <li>Setback area tiles – Rs.45/- per Sqft (if charged)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 9 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Painting</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Internal wall & ceiling: 2 coat wall putty + 1 coat primer + 2 coat Tractor emulsion paint</li>
+                <li>External walls: 1 coat primer + 2 coat Ace weatherproof paint</li>
+                <li>Brand: Asian / Berger / Dulux</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Internal wall & ceiling: 2 coat wall putty + 1 coat primer + 2 coat Tractor emulsion paint</li>
+                <li>External walls: 1 coat primer + 2 coat Ace weatherproof paint</li>
+                <li>Brand: Asian / Berger / Dulux</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Internal wall & ceiling: 2 coat wall putty + 1 coat primer + 2 coat Tractor emulsion paint</li>
+                <li>External walls: 1 coat primer + 2 coat Ace weatherproof paint</li>
+                <li>Brand: Asian / Berger / Dulux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 10 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Electrical</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Light & power points – As per electrical design</li>
+                <li>Geyser points – All bathrooms</li>
+                <li>AC provision – Any 1 room</li>
+                <li>Conduits – Good quality, hidden in slabs and walls</li>
+                <li>Copper wire – Anchor</li>
+                <li>External electrification included</li>
+                <li>Switches & plates – Anchor Ziva</li>
+                <li>Main DB & MCB – IndoAsian</li>
+                <li>One UPS point for the house</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Sufficient light & power points – As per electrical standards</li>
+                <li>Geyser points – All bathrooms</li>
+                <li>AC provision – Any 2 bedrooms</li>
+                <li>Conduits – Good quality, hidden in slabs and walls</li>
+                <li>Fireproof copper wire – Anchor</li>
+                <li>External electrification included</li>
+                <li>Switches & plates – Anchor Penta White</li>
+                <li>Main DB & MCB – IndoAsian</li>
+                <li>EV charging point provision</li>
+                <li>One UPS point for the house</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Sufficient light & power points – As per electrical standards</li>
+                <li>Conduits – Good quality, hidden in slabs and walls</li>
+                <li>Fire-retardant copper wire – Havells</li>
+                <li>AC provision – In all rooms</li>
+                <li>Switches & plates – Legrand Allzy White or equivalent</li>
+                <li>Touch screen switch provision included</li>
+                <li>Main DB & MCB – Legrand</li>
+                <li>External electrification included</li>
+                <li>Home automation provision included</li>
+                <li>EV charging point provision</li>
+                <li>One UPS point for the home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 11 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Plumbing</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Water supply system – Internal & External</li>
+                <li>Connection for water inlet from corporation</li>
+                <li>External sewage system – Inspection chambers & sewage outlet to site boundary</li>
+                <li>Class B CPVC pipes – Astral/Supreme</li>
+                <li>Solar & geyser provision</li>
+                <li>Rainwater harvesting facility – Ground water recharge</li>
+                <li>PVC overhead tank – Ganga or equivalent (Rs.6.5 per litre)</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Water supply system – Internal & External</li>
+                <li>Connection for water inlet from corporation</li>
+                <li>External sewage system – Inspection chambers & sewage outlet to site boundary</li>
+                <li>Class B CPVC pipes – Ashirwad/Astral</li>
+                <li>Solar & geyser provision</li>
+                <li>Rainwater harvesting facility – Ground water recharge</li>
+                <li>PVC overhead tank – Ganga or equivalent (Rs.7 per litre)</li>
+                <li>GI chamber covers provided for inspection chambers</li>
+                <li>Separate sewage & drainage lines</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Water supply system – Internal & External</li>
+                <li>Connection for water inlet from corporation</li>
+                <li>Separate borewell & corporation lines for kitchen (if needed)</li>
+                <li>Additional tank cost on actuals (if required)</li>
+                <li>External sewage system – Inspection chambers & sewage outlet to site boundary</li>
+                <li>Class B CPVC pipes – Ashirwad/Astral</li>
+                <li>Solar & geyser provision</li>
+                <li>Rainwater harvesting facility – Ground water recharge</li>
+                <li>PVC overhead tank – Sintex (based on per capita consumption)</li>
+                <li>FRP chamber covers provided for inspection chambers</li>
+                <li>Separate sewage & drainage lines</li>
+                <li>Separate hot & cold water lines for sink</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 12 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Fixtures</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Kitchen sink with accessories: SS – Rs.4,500/- per kitchen</li>
+                <li>CP & sanitary fixtures (wash basin, WC, taps, bottle trap, gratings etc.): Hindware/Cera –
+                  Rs.20,000/- per attached bathroom</li>
+                <li>Electrical fixtures – Not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Kitchen sink: SS/Granite/Carysil – Rs.6,000/- per kitchen</li>
+                <li>CP & sanitary fixtures (wash basin, WC, taps, bottle trap, gratings etc.): Jaquar/Hindware –
+                  Rs.22,000/- per attached bathroom</li>
+                <li>Powder room fixtures (if applicable): Rs.8,000/-</li>
+                <li>Electrical fixtures – Not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Kitchen sink & accessories: SS/Granite/Carysil – Rs.15,000/- per kitchen</li>
+                <li>CP & sanitary fixtures (wash basin, WC, taps, bottle trap, gratings etc.): Jaquar/Hindware –
+                  Rs.35,000/- per attached bathroom</li>
+                <li>Powder room fixtures (if applicable): Rs.15,000/-</li>
+                <li>Electrical fixtures – Not included</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 13 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Doors</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Main Door: Teak wood frame & shutter – ₹20,000</li>
+                <li>Internal Doors: Any wood – ₹8,000</li>
+                <li>Bathroom/Terrace Door – ₹7,500</li>
+                <li>Door hardware – Ozone/Europa/Dorma</li>
+                <li>SS hinges</li>
+                <li>Polished main door</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Main & Puja Door: Teak wood – ₹25,000</li>
+                <li>Internal Door: Sal wood – ₹9,000</li>
+                <li>Bathroom Door – ₹8,000</li>
+                <li>Melamine polish (main door)</li>
+                <li>Hardware – Ozone/Europa/Dorma</li>
+                <li>SS hinges</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Main & Puja Door: Premium teak – ₹50,000</li>
+                <li>Internal Door: Sal wood – ₹11,000</li>
+                <li>Bathroom Door – ₹9,000</li>
+                <li>Melamine spray polish</li>
+                <li>Premium hardware</li>
+                <li>SS hinges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 14 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Windows</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Aluminium windows with 5mm clear glass</li>
+                <li>MS grills included</li>
+                <li>Price: ₹400 per Sqft</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>uPVC windows with 5mm clear glass</li>
+                <li>MS grills included</li>
+                <li>Price: ₹510 per Sqft</li>
+                <li>Optional upgrade to wooden windows (extra cost)</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Premium uPVC (Kommerling or equivalent)</li>
+                <li>5mm clear glass with MS grills</li>
+                <li>Price: ₹690 per Sqft</li>
+                <li>OR Wooden windows (Sal wood frame + Honne shutter)</li>
+                <li>Includes hardware fittings</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 15 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Fabrication</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Main Gate: MS Gate – ₹330 per Sqft</li>
+                <li>External staircase & balcony railing: MS railing – ₹550 per Rft</li>
+                <li>Internal staircase railing: SS railing – ₹840 per Rft</li>
+                <li>Utility grill not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Main Gate: Designer Gate – ₹350 per Sqft</li>
+                <li>External staircase & balcony railing: MS railing – ₹600 per Rft</li>
+                <li>Internal staircase railing: SS railing – ₹900 per Rft</li>
+                <li>Utility grill not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Main Gate: Designer Gate – ₹450 per Sqft</li>
+                <li>External staircase & balcony railing: MS railing – ₹660 per Rft</li>
+                <li>Internal staircase railing: SS railing – ₹1080 per Rft</li>
+                <li>Utility grill not included</li>
+                <li>Waterproofing included for utility & balcony</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 16 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Compound wall</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Readymade / Pre-cast compound wall (max 3" thickness)</li>
+                <li>Painted finish</li>
+                <li>Excavation, foundation, PCC included</li>
+                <li>Size stone masonry with DPC course</li>
+                <li>Height: 5 feet</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Designer compound wall</li>
+                <li>Gate with basic automation</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Premium compound wall</li>
+                <li>Auto gate with intercom</li>
+                <li>Cladding / texture finish</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 17 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Elevation</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Standard plaster finish elevation</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Designer elevation with texture paint</li>
+                <li>Weather-resistant coating</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Premium cladding / ACP / stone</li>
+                <li>Full designer exterior</li>
+                <li>Landscape lighting provision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 18 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Exclusions &amp; incidentals</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>Borewell not included</li>
+                <li>Landscaping not included</li>
+                <li>Modular kitchen not included</li>
+                <li>Lifts not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>Borewell not included</li>
+                <li>Solar panels not included</li>
+                <li>Lifts not included</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Borewell not included</li>
+                <li>All else included / customisable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 19 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Payment structure</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>10% booking amount</li>
+                <li>Stage-wise milestone payments</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>10% booking amount</li>
+                <li>Milestone-based disbursement</li>
+                <li>Bank loan assistance</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>Customised payment schedule</li>
+                <li>Dedicated relationship manager</li>
+                <li>Bank loan co-ordination</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 20 -->
+        <div class="pkg-row">
+          <div class="pkg-row-header">
+            <span>Warranty and guarantee</span>
+            <span class="pkg-chevron material-symbols-outlined">expand_more</span>
+          </div>
+          <div class="pkg-row-body">
+            <div class="pkg-cell pkg-cell-basic"><strong>Basic</strong>
+              <ul>
+                <li>1 year structural warranty</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-premium"><strong>Premium</strong>
+              <ul>
+                <li>3 year structural warranty</li>
+                <li>1 year waterproofing warranty</li>
+              </ul>
+            </div>
+            <div class="pkg-cell pkg-cell-luxury"><strong>Luxury</strong>
+              <ul>
+                <li>5 year structural warranty</li>
+                <li>2 year waterproofing warranty</li>
+                <li>1 year electrical warranty</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end accordion -->
     </div>
   </section>
 

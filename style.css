@@ -500,12 +500,8 @@ label {
   }
 }
 
-/* Floating Cards Mobile Behavior */
-@media (max-width: 768px) {
-  .hero-image-wrapper .floating-card-bottom {
-    display: none;
-  }
-}
+/* Floating Cards behavior handled in main media query */
+
 
 /* Hero Image & Floating Cards */
 .hero-image-wrapper {
@@ -721,6 +717,11 @@ label {
   box-shadow: var(--shadow-2xl);
 }
 
+.cta-banner h2 {
+  color: white;
+}
+
+
 /* Footer */
 .footer {
   background-color: var(--bg-dark);
@@ -769,6 +770,38 @@ label {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
+
+.social-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid var(--outline-ghost);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.social-contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-blue);
+  background-color: #f8fafc;
+}
+
+.social-contact-link img {
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.social-contact-link:hover img {
+  filter: grayscale(0);
+}
+
 
 /* Floating Buttons */
 .fixed-whatsapp {
@@ -972,7 +1005,7 @@ label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #63b3c0; /* matches screenshot teal color */
+  color: var(--primary-blue);
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -1192,18 +1225,48 @@ label {
 
   /* Floating cards behavior on mobile */
   .floating-card-bottom {
-    position: relative !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    margin: 20px auto 0 !important;
-    max-width: 280px !important;
-    transform: none !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    left: -10px !important;
+    padding: 12px 16px !important;
+    border-radius: 16px !important;
+    gap: 12px !important;
+    box-shadow: var(--shadow-xl) !important;
+    min-width: 180px !important;
+  }
+  
+  .floating-card-bottom .material-symbols-outlined {
+    font-size: 20px !important;
   }
 
   .floating-card-top {
-    display: none;
-    /* Keep it clean on small screens */
+    display: flex !important;
+    position: absolute !important;
+    top: 20px !important;
+    right: -10px !important;
+    padding: 12px 16px !important;
+    border-radius: 16px !important;
+    gap: 12px !important;
+    box-shadow: var(--shadow-lg) !important;
   }
+  
+  .floating-card-top .material-symbols-outlined {
+    font-size: 20px !important;
+  }
+
+  .floating-card-bottom div div, 
+  .floating-card-top div div {
+    font-size: 10px !important;
+  }
+  
+  .floating-card-bottom div div:last-child {
+    font-size: 14px !important;
+  }
+  
+  .floating-card-top div div:first-child {
+    font-size: 18px !important;
+  }
+
 
   .stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
