@@ -990,6 +990,8 @@ label {
   height: 400px;
 }
 
+
+
 .roadmap-img-wrapper img {
   width: 100%;
   height: 100%;
@@ -1148,6 +1150,14 @@ label {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
   }
+  .card4{
+  width: 235px !important;
+}
+
+
+.card5{
+  width: 252px !important;
+}
 
   .cta-banner {
     padding: 48px 24px !important;
